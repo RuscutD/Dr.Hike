@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dr. Hike’s investigation</title>
+    <link rel="stylesheet" href="../css/dec-3.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="img/detective.png">
+</head>
+
+<body>
+    <section class="top">
+        <div class="dec-space">
+            <button class="button" id="btn-1" onclick="find1()"></button>
+            <button class="button" id="btn-2" onclick="find2()"></button>
+            <button class="button" id="btn-3" onclick="find3()"></button>
+        </div>
+        <section class="right">
+            <div class="list-space">
+                <h1 class="title-list">List</h1>
+                <div class="words-list">  
+                    <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                        <img id="valid-1" src="../img/valid.png" alt="validate" style="width: 20px; height: 20px; display: none;">              
+                        <h3 class="object" id="lst-1" title="I need his e-mails">Computer</h3>
+                    </div>
+                    <br>
+                    <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                        <img id="valid-2" src="../img/valid.png" alt="validate" style="width: 20px; height: 20px; display: none;">
+                        <h3 class="object" id="lst-2" title="Cassette Player">HiFi-system</h3>
+                    </div>
+                    <br>
+                    <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                        <img id="valid-3" src="../img/valid.png" alt="validate" style="width: 20px; height: 20px; display: none;">
+                        <h3 class="object" id="lst-3" title="Don't drink, he may have poisoned it">Water</h3>
+                    </div>
+                </div>
+            </div>
+            <a href=".././../../../Documents/ETNA_PROJECTS/Learning_Game/menu/menu-3.html">
+                <button id="next" style="display: none;" class="btn-next">NEXT</button>
+            </a>
+        </section>
+    </section>
+    <script>
+
+        var score = 0;
+
+        function find1() {
+            document.getElementById("lst-1").style.color = "green";
+            document.getElementById("btn-1").style.backgroundColor = "white";
+            document.getElementById("btn-1").style.opacity = "50%";
+            document.getElementById("valid-1").style.display = "block";
+            if (score == 2) {
+                displayNext();
+            }
+            else {
+                score++;
+            }
+        }
+        function find2() {
+            document.getElementById("lst-2").style.color = "green";
+            document.getElementById("btn-2").style.backgroundColor = "white";
+            document.getElementById("btn-2").style.opacity = "50%";
+            document.getElementById("valid-2").style.display = "block";
+            if (score == 2) {
+                displayNext();
+            }
+            else {
+                score++;
+            }
+        }
+        function find3() {
+            document.getElementById("lst-3").style.color = "green";
+            document.getElementById("btn-3").style.backgroundColor = "white";
+            document.getElementById("btn-3").style.opacity = "50%";
+            document.getElementById("valid-3").style.display = "block";
+            if (score == 2) {
+                displayNext();
+            }
+            else {
+                score++;
+            }
+        }
+
+            function displayNext() {
+                document.getElementById("next").style.display = "block";
+            }
+    </script>
+</body>
+
+</html>

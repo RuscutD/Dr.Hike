@@ -1,0 +1,64 @@
+body {
+    background-color: #303242;
+}
+
+section {
+    margin-left: 65vh;
+    position: relative;
+    align-content: center;
+}
+
+.englandMap {
+    position: absolute;
+}
+
+.dover {
+    font-size: 30px;
+    z-index: 1;
+    color: #394359;
+    margin-top: 600px;
+    margin-left: 300px;
+}
+
+.norwich {
+    font-size: 30px;
+    z-index: 1;
+    color: #394359;
+    margin-top: 480px;
+    margin-left: 320px;
+}
+
+.hartlepool {
+    font-size: 30px;
+    z-index: 1;
+    color: #394359;
+    margin-top: 330px;
+    margin-left: 230px;
+}
+
+.glasgow {
+    font-size: 40px;
+    z-index: 1;
+    color: red;
+    margin-top: 230px;
+    margin-left: 100px;
+    animation: puls 2s infinite;
+}
+
+.glasgow:hover {
+    transition-duration: 0.2s;
+    font-size: 45px;
+    color: #f2be8d;
+}
+
+@keyframes puls {
+    0% {
+        font-size: 40px;
+    }
+    50% {
+        font-size: 42px;
+    }
+    100% {
+        font-size: 40px;
+    }
+}

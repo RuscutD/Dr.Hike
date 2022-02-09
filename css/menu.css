@@ -1,0 +1,112 @@
+body {
+    background-color: #f2be8d;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.right {
+    width: 40%;
+    background-color: #394359;
+}
+
+.left {
+    width: 60%;
+}
+
+.title {
+    color: #303242;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    animation: fadeIn 1s;
+}
+
+.englandMap {
+    width: 400px;
+    height: 585px;
+    margin-left: 100px;
+    margin-top: 70px;
+    animation: fadeIn, moveIn 2s;
+
+}
+
+.englandMap:hover {
+    transition-duration: 0.5s;
+    width: 410px;
+    height: 595px;
+    filter: brightness(1.75);
+}
+
+.detective-pic {
+    margin-top: 400px;
+    height: 400px;
+    position: initial;
+    animation: moveIn 1s;
+}
+
+.text {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.text:active {
+    display: block;
+}
+
+.conv {
+    height: 300px;
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.next {
+    width: 80px;
+    margin-left: 500px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    animation: fade 1s;
+}
+
+.next:hover {
+    transition-duration: 0.2s;
+    color: #ba6c65;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    98% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveIn {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dr. Hike’s investigation</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="shortcut icon" href="../img/detective.png">
+</head>
+
+<body>
+    <section class="top">
+        <div class="left">
+            <h1 class="title">Dr. Hike’s Investigation</h1>
+            <div style="display: flex; flex-direction: row; align-items: center;">
+                <img class="detective-pic" src="../img/detective.png" alt="detective">
+                <div class="conv">
+
+                    <div class="mySlides">
+                        <p class="text">Hi, Welcome to England! My name is Hike, but you can call me Dr.Hike :) Look...I know that can look strange but I need You ! I'm a detective and I'm here to catch a dangerous criminal who escaped from a French prison and wants to found Liberty in England. I really need someone to help me...
+                        <p>
+                        <p class="text">If you agree to do it follow me and I will explain you how to do it !</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <a style=" animation: fade 22s;" href="../../../../Documents/ETNA_PROJECTS/Learning_Game/map/map.html">
+                <img class="englandMap" src="../img/england.png" alt="englandMap">
+            </a>
+            <h5 style="padding-left: 240px; padding-top: 100px; color: white; animation: fade 25s;">Click on the map to START</h5>
+        </div>
+    </section>
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            animate_text();
+        });
+        function animate_text() {
+            let delay = 50,
+                delay_start = 0,
+                contents,
+                letters;
+
+            document.querySelectorAll(".text").forEach(function (elem) {
+                contents = elem.textContent.trim();
+                elem.textContent = "";
+                letters = contents.split("");
+
+                letters.forEach(function (letter, index_1) {
+                    setTimeout(function () {
+                        elem.textContent += letter;
+                    }, delay_start + delay * index_1);
+                });
+                delay_start += delay * letters.length;
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
